@@ -69,14 +69,14 @@
     </div>
 
     <!-- Scroll Down Icon -->
-    <div class="scroll-down">
-      <span>Scroll Down</span>
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
+<div id="scroll-down" class="scroll-down">
+  <span>Scroll Down</span>
+  <i class="fas fa-chevron-down"></i>
+</div>
+
 
   <!-- About Section -->
-  <section class="about-section">
+ <section class="about-section" id="about">
     <div class="container about-content">
       <div class="about-image">
         <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Mountains">
@@ -441,6 +441,12 @@
 
   <!-- Script to control video popup -->
   <script>
+
+    // Scroll Down Button Functionality
+  document.getElementById("scroll-down").addEventListener("click", function () {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+   });
+
     const videoBtn = document.querySelector('.video-btn');
     const modal = document.getElementById('videoModal');
     const videoFrame = document.getElementById('videoFrame');
@@ -560,4 +566,5 @@ mobileMenu.addEventListener('click', function(e) {
 
 </body>
 </html>
+
 
