@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hepta - Travel & Tours</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styling.css" />
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Active menu button style */
+    .mobile-menu-btn.active {
+      color: #7ccfc8 !important;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-container">
+    <div class="mobile-menu-close">
+      <div class="close-icon-wrapper">
+        <span class="close-line close-line-1"></span>
+        <span class="close-line close-line-2"></span>
+      </div>
+    </div>
+    <div class="mobile-menu-content">
+      <button class="mobile-menu-btn active" onclick="window.location.href='index.html'">Home</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='hotel.html'">Hotels</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='aboutUs.html'">About Us</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='gallery.html'">Gallery</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='news.html'">News</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+  </div>
+</div>
+<body>
+
+  <!-- Rest of your index.html content remains exactly the same -->
+  <!-- Navigation Bar -->
+  <header class="site-navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="site-logo">Hepta</a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section hero-overlay">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Travel & Tours</h1>
+        <p>A free template made by taking reference from <span class="highlight">Colorlib</span>. Download and share!</p>
+        <a href="#" class="btn-outline">VISIT COLORLIB</a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Icon -->
+    <div class="scroll-down">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container about-content">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Mountains">
+      </div>
+      <div class="about-text">
+        <h2>Welcome To Our Website</h2>
+        <p>
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+          there live the blind texts. Separated they live in Bookmarksgrove right at the coast of 
+          the Semantics, a large language ocean.
+        </p>
+        <p>
+          A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        </p>
+        <a href="#" class="video-btn">
+          <span class="play-icon"><i class="fas fa-play"></i></span>
+          WATCH THE VIDEO
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Experience Section -->
+<section class="experience-section">
+  <div class="container">
+    <h2 class="experience-title">Experience Once In Your Life Time</h2>
+    <p class="experience-desc">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,<br />
+      there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the<br />
+      Semantics, a large language ocean.
+    </p>
+
+    <div class="experience-grid">
+      <!-- Good Foods -->
+      <div class="experience-item">
+        <img src="https://img.icons8.com/color/96/meal.png" alt="Good Foods">
+        <h3>Good Foods</h3>
+        <p>Delicious local and international cuisines served with passion and authenticity.</p>
+      </div>
+
+      <!-- Travel Anywhere -->
+      <div class="experience-item">
+        <img src="https://img.icons8.com/color/96/worldwide-location.png" alt="Travel Anywhere">
+        <h3>Travel Anywhere</h3>
+        <p>Explore new cultures and destinations with our expertly crafted itineraries.</p>
+      </div>
+
+      <!-- Airplane -->
+      <div class="experience-item">
+        <img src="https://img.icons8.com/color/96/airplane-take-off--v1.png" alt="Airplane">
+        <h3>Airplane</h3>
+        <p>Fly in comfort and style with our global airline partners and packages.</p>
+      </div>
+
+      <!-- Beach Resort -->
+      <div class="experience-item">
+        <img src="https://img.icons8.com/color/96/beach.png" alt="Beach Resort">
+        <h3>Beach Resort</h3>
+        <p>Relax by crystal-clear waters and golden sands in world-class beach resorts.</p>
+      </div>
+
+      <!-- Mountain Climbing -->
+      <div class="experience-item">
+        <img src="https://img.icons8.com/color/96/climbing.png" alt="Mountain Climbing">
+        <h3>Mountain Climbing</h3>
+        <p>Conquer the peaks with guided climbs and breathtaking alpine views.</p>
+      </div>
+
+      <!-- Hot Air Balloon -->
+      <div class="experience-item">
+        <img src="https://img.icons8.com/color/96/hot-air-balloon.png" alt="Hot Air Balloon">
+        <h3>Hot Air Balloon</h3>
+        <p>Soar above landscapes and enjoy a peaceful sunrise from the skies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- International Tour Management Section -->
+<section class="tour-management">
+  <div class="tour-text-container">
+    <h2 class="tour-title">International Tour <br> Management.</h2>
+    <p class="tour-subtitle">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,<br>
+      there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the<br>
+      Semantics, a large language ocean.
+    </p>
+  </div>
+
+  <div class="tour-slider-wrapper">
+    <button class="tour-btn prev">&#10094;</button>
+
+    <div class="tour-slider-container">
+      <div class="tour-slider">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" class="tour-slide active">
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80" class="tour-slide">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80" class="tour-slide">
+      </div>
+    </div>
+
+    <button class="tour-btn next">&#10095;</button>
+  </div>
+
+  <div class="tour-dots">
+    <span class="tour-dot active"></span>
+    <span class="tour-dot"></span>
+    <span class="tour-dot"></span>
+  </div>
+</section>
+
+<!-- Recent Blog Posts Section -->
+<section class="recent-blog-section">
+  <div class="container">
+    <div class="recent-blog-text-container">
+      <h2 class="recent-blog-title">Recent Blog Post</h2>
+      <p class="recent-blog-desc">
+        Far far away, behind the word mountains, far from the countries Volalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+      </p>
+    </div>
+
+    <div class="blog-grid">
+      <!-- Blog Post 1 -->
+      <div class="blog-post">
+        <div class="blog-image-container">
+          <button class="blog-clickable-area" onclick="window.location.href='#'">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Travel destination" class="blog-image">
+            <div class="blog-date">FEBRUARY 26, 2018</div>
+          </button>
+        </div>
+        <div class="blog-content">
+          <button class="blog-clickable-area" onclick="window.location.href='#'">
+            <h3 class="blog-title">45 Best Places To Unwind</h3>
+          </button>
+          <p class="blog-excerpt">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-post">
+        <div class="blog-image-container">
+          <button class="blog-clickable-area" onclick="window.location.href='#'">
+            <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80" alt="Travel destination" class="blog-image">
+            <div class="blog-date">FEBRUARY 26, 2018</div>
+          </button>
+        </div>
+        <div class="blog-content">
+          <button class="blog-clickable-area" onclick="window.location.href='#'">
+            <h3 class="blog-title">45 Best Places To Unwind</h3>
+          </button>
+          <p class="blog-excerpt">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="blog-post">
+        <div class="blog-image-container">
+          <button class="blog-clickable-area" onclick="window.location.href='#'">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Travel destination" class="blog-image">
+            <div class="blog-date">FEBRUARY 26, 2018</div>
+          </button>
+        </div>
+        <div class="blog-content">
+          <button class="blog-clickable-area" onclick="window.location.href='#'">
+            <h3 class="blog-title">45 Best Places To Unwind</h3>
+          </button>
+          <p class="blog-excerpt">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Happy Customers Section -->
+<section class="happy-customers-section off-white-bg">
+  <div class="container">
+    <h2 class="happy-customers-title">Happy Customers</h2>
+    
+    <div class="testimonials-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial">
+        <div class="customer-image-container">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Clare Gupta" class="customer-image">
+        </div>
+        <blockquote class="testimonial-text">
+          “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”
+        </blockquote>
+        <div class="testimonial-author">— Clare Gupta</div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="testimonial">
+        <div class="customer-image-container">
+          <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Rogie Slater" class="customer-image">
+        </div>
+        <blockquote class="testimonial-text">
+          “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”
+        </blockquote>
+        <div class="testimonial-author">— Rogie Slater</div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="testimonial">
+        <div class="customer-image-container">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="John Doe" class="customer-image">
+        </div>
+        <blockquote class="testimonial-text">
+          “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”
+        </blockquote>
+        <div class="testimonial-author">— John Doe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Destination Section -->
+<section class="top-destination-section">
+  <div class="container">
+    <h2 class="top-destination-title">Top Destination</h2>
+    <p class="top-destination-desc">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, justo doloremque quo odio repudiandae sunt eveniet? Enim facilis laborum voluptate id porro, culpa maiores quis, blanditlis laboriosam alias. Sed.
+    </p>
+
+    <div class="destination-categories">
+      <!-- Food & Wines -->
+      <div class="category-item">
+        <button class="destination-clickable-area" onclick="window.location.href='#'">
+          <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="destination-content">
+            <h3 class="destination-name">Food & Wines</h3>
+            <div class="rating-reviews">
+              <div class="stars">★★★★☆</div>
+              <div class="review-count">3,239 reviews</div>
+            </div>
+          </div>
+        </button>
+      </div>
+      
+      <!-- Resort & Spa -->
+      <div class="category-item">
+        <button class="destination-clickable-area" onclick="window.location.href='#'">
+          <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="destination-content">
+            <h3 class="destination-name">Resort & Spa</h3>
+            <div class="rating-reviews">
+              <div class="stars">★★★★☆</div>
+              <div class="review-count">4,921 reviews</div>
+            </div>
+          </div>
+        </button>
+      </div>
+      
+      <!-- Hotel Rooms -->
+      <div class="category-item">
+        <button class="destination-clickable-area" onclick="window.location.href='#'">
+          <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="destination-content">
+            <h3 class="destination-name">Hotel Rooms</h3>
+            <div class="rating-reviews">
+              <div class="stars">★★★★☆</div>
+              <div class="review-count">2,112 reviews</div>
+            </div>
+          </div>
+        </button>
+      </div>
+      
+      <!-- Mountain Climbing -->
+      <div class="category-item">
+        <button class="destination-clickable-area" onclick="window.location.href='#'">
+          <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+          <div class="destination-content">
+            <h3 class="destination-name">Mountain Climbing</h3>
+            <div class="rating-reviews">
+              <div class="stars">★★★★☆</div>
+              <div class="review-count">6,421 reviews</div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Quick Link</h3>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Rooms</a></li>
+        </ul>
+      </div>
+      
+      <!-- Support -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Our Location</a></li>
+          <li><a href="#">The Hosts</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Restaurant</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="contact-label">Address:</span>
+            <span class="contact-value">98 West 21th Street, Suite 721<br>New York NY 10016</span>
+          </li>
+          <li>
+            <span class="contact-label">Phone:</span>
+            <span class="contact-value">(+1) 435 3533</span>
+          </li>
+          <li>
+            <span class="contact-label">Email:</span>
+            <span class="contact-value">info@yourdomain.com</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Subscribe -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Subscribe</h3>
+        <p class="subscribe-text">Sign up for our newsletter</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your email..." class="subscribe-input">
+          <button type="submit" class="subscribe-btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">Copyright © 2025 All rights reserved | This template is made with by Colorlib</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-content">
+      <span class="video-close">&times;</span>
+      <iframe id="videoFrame" width="100%" height="100%" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    </div>
+  </div>
+
+  <!-- Script to control video popup -->
+  <script>
+    const videoBtn = document.querySelector('.video-btn');
+    const modal = document.getElementById('videoModal');
+    const videoFrame = document.getElementById('videoFrame');
+    const closeBtn = document.querySelector('.video-close');
+
+    const videoURL = 'https://www.youtube.com/embed/Scxs7L0vhZ4?autoplay=1';
+
+    videoBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      modal.style.display = 'block';
+      videoFrame.src = videoURL;
+    });
+
+    closeBtn.addEventListener('click', function () {
+      modal.style.display = 'none';
+      videoFrame.src = '';
+    });
+
+    window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        videoFrame.src = '';
+      }
+    });
+
+  const tourSlides = document.querySelectorAll('.tour-slide');
+  const tourDots = document.querySelectorAll('.tour-dot');
+  const prevBtn = document.querySelector('.tour-btn.prev');
+  const nextBtn = document.querySelector('.tour-btn.next');
+  let current = 0;
+
+  function showSlide(idx) {
+    tourSlides.forEach((slide,i) => slide.classList.toggle('active', i === idx));
+    tourDots.forEach((dot,i) => dot.classList.toggle('active', i === idx));
+  }
+
+  prevBtn.addEventListener('click', () => {
+    current = (current - 1 + tourSlides.length) % tourSlides.length;
+    showSlide(current);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    current = (current + 1) % tourSlides.length;
+    showSlide(current);
+  });
+
+  tourDots.forEach((dot,i) =>
+    dot.addEventListener('click', () => {
+      current = i;
+      showSlide(i);
+    })
+  );
+
+  // initialize
+  showSlide(current);
+  // Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu-overlay');
+const closeMenu = document.querySelector('.mobile-menu-close');
+const body = document.body;
+const hamburgerIcon = document.querySelector('.menu-toggle .fa-bars');
+
+// Open menu
+menuToggle.addEventListener('click', function(e) {
+  e.stopPropagation();
+  mobileMenu.classList.add('active');
+  body.classList.add('mobile-menu-active');
+  
+  // Animate hamburger to close
+  hamburgerIcon.style.opacity = '0';
+  hamburgerIcon.style.transform = 'translateY(-50%) rotate(90deg)';
+  
+  // Show close icon with animation
+  setTimeout(() => {
+    const closeLines = document.querySelectorAll('.close-line');
+    closeLines.forEach(line => {
+      line.style.opacity = '1';
+      line.style.transform = line.classList.contains('close-line-1') 
+        ? 'translateY(-50%) rotate(45deg)' 
+        : 'translateY(-50%) rotate(-45deg)';
+    });
+  }, 100);
+});
+
+// Close menu
+function closeMobileMenu() {
+  // Animate close to hamburger
+  const closeLines = document.querySelectorAll('.close-line');
+  closeLines.forEach(line => {
+    line.style.opacity = '0';
+    line.style.transform = 'translateY(-50%) rotate(0deg)';
+  });
+  
+  setTimeout(() => {
+    mobileMenu.classList.remove('active');
+    body.classList.remove('mobile-menu-active');
+    hamburgerIcon.style.opacity = '1';
+    hamburgerIcon.style.transform = 'translateY(-50%) rotate(0deg)';
+  }, 300);
+}
+
+closeMenu.addEventListener('click', closeMobileMenu);
+
+// Close menu when clicking on a button
+const menuButtons = document.querySelectorAll('.mobile-menu-btn');
+menuButtons.forEach(button => {
+  button.addEventListener('click', closeMobileMenu);
+});
+
+// Close menu when clicking outside
+mobileMenu.addEventListener('click', function(e) {
+  if (e.target === mobileMenu) {
+    closeMobileMenu();
+  }
+});
+  </script>
+
+</body>
+</html>

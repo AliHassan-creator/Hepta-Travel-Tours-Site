@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hepta - Blog</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styling.css" />
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Custom style to reduce hero section height by ~10% */
+    .hero-section {
+      height: 50vh; /* Reduced significantly to 50% of viewport height */
+      min-height: 400px; /* Reduced minimum height */
+      background-size: cover !important;
+      background-position: center center !important;
+      margin-bottom: 100px; /* Adds extra space below the hero section */
+    }
+    
+    /* Active menu button style */
+    .mobile-menu-btn.active {
+      color: #7ccfc8 !important;
+      font-weight: 600;
+    }
+    
+    /* Add margin/padding to create gap after hero section */
+    .hero-section + * {
+      margin-top: 80px; /* Creates gap after hero section */
+    }
+    
+    /* Force white backgrounds for all sections */
+    .hotel-gallery-section,
+    .recent-blog-section {
+      background-color: #fff !important;
+    }
+    
+    /* Remove all background effects */
+    .hotel-gallery-section::before,
+    .recent-blog-section::before,
+    .recent-blog-section::after {
+      display: none !important;
+    }
+    
+    /* Ensure text remains readable */
+    .recent-blog-title,
+    .recent-blog-desc {
+      color: #000 !important;
+    }
+    
+    /* Maintain card styling */
+    .blog-post {
+      background: #fff !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1) !important;
+    }
+    
+    /* Keep slider shadow */
+    .hotel-gallery-section .tour-slider-container {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+    }
+</style>
+  
+</head>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-container">
+    <div class="mobile-menu-close">
+      <div class="close-icon-wrapper">
+        <span class="close-line close-line-1"></span>
+        <span class="close-line close-line-2"></span>
+      </div>
+    </div>
+    <div class="mobile-menu-content">
+      <button class="mobile-menu-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='hotel.html'">Hotels</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='aboutUs.html'">About Us</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='gallery.html'">Gallery</button>
+      <button class="mobile-menu-btn active " onclick="window.location.href='news.html'">News</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+  </div>
+</div>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="site-logo">Hepta</a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<!-- Hero Section -->
+<section class="hero-section hero-overlay" style="
+    height: 50vh;
+    min-height: 400px;
+    margin-bottom: 100px;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover !important;">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Blog</h1>
+      <p>A free template made by taking reference from <span class="highlight">Colorlib</span>. Download and share!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog-main-section">
+  <div class="container">
+    <div class="blog-layout">
+      <!-- Main Content Area -->
+      <div class="blog-posts-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-post-item">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Post Image">
+          <div class="blog-post-content">
+            <span class="post-date">FEBRUARY 26, 2018</span>
+            <h2 class="post-title"><a href="#">Free Template by Colorlib</a></h2>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-post-item">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Post Image">
+          <div class="blog-post-content">
+            <span class="post-date">FEBRUARY 26, 2018</span>
+            <h2 class="post-title"><a href="#">Free Template by Colorlib</a></h2>
+          </div>
+        </article>
+
+        <!-- Repeat similar blog posts -->
+        <article class="blog-post-item">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Post Image">
+          <div class="blog-post-content">
+            <span class="post-date">FEBRUARY 26, 2018</span>
+            <h2 class="post-title"><a href="#">Free Template by Colorlib</a></h2>
+          </div>
+        </article>
+
+        <article class="blog-post-item">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Post Image">
+          <div class="blog-post-content">
+            <span class="post-date">FEBRUARY 26, 2018</span>
+            <h2 class="post-title"><a href="#">Free Template by Colorlib</a></h2>
+          </div>
+        </article>
+      </div>
+
+      <!-- Sidebar Area -->
+      <aside class="blog-sidebar">
+        <!-- Search Widget -->
+        <div class="sidebar-widget">
+          <div class="search-box">
+            <input type="text" placeholder="Search..." class="search-input">
+          </div>
+        </div>
+
+        <!-- Popular Posts Widget -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Popular Post</h3>
+          <ul class="popular-posts">
+            <li>
+              <div class="popular-post-image">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=200&q=80" alt="Popular post">
+              </div>
+              <div class="popular-post-content">
+                <span class="post-date">FEBRUARY 27, 2018</span>
+                <a href="#">Free Template by Colorlib</a>
+              </div>
+            </li>
+            <li>
+              <div class="popular-post-image">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=200&q=80" alt="Popular post">
+              </div>
+              <div class="popular-post-content">
+                <span class="post-date">FEBRUARY 27, 2018</span>
+                <a href="#">Free Template by Colorlib</a>
+              </div>
+            </li>
+            <li>
+              <div class="popular-post-image">
+                <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=200&q=80" alt="Popular post">
+              </div>
+              <div class="popular-post-content">
+                <span class="post-date">FEBRUARY 27, 2018</span>
+                <a href="#">Free Template by Colorlib</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Categories</h3>
+          <ul class="categories-list">
+            <li><a href="#">Events (12)</a></li>
+            <li><a href="#">Resto bar (4)</a></li>
+            <li><a href="#">Celebration (23)</a></li>
+            <li><a href="#">Promos (8)</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#" class="page active">1</a>
+      <a href="#" class="page">2</a>
+      <a href="#" class="page">3</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Quick Link</h3>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Rooms</a></li>
+        </ul>
+      </div>
+      
+      <!-- Support -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Our Location</a></li>
+          <li><a href="#">The Hosts</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Restaurant</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="contact-label">Address:</span>
+            <span class="contact-value">98 West 21th Street, Suite 721<br>New York NY 10016</span>
+          </li>
+          <li>
+            <span class="contact-label">Phone:</span>
+            <span class="contact-value">(+1) 435 3533</span>
+          </li>
+          <li>
+            <span class="contact-label">Email:</span>
+            <span class="contact-value">info@yourdomain.com</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Subscribe -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Subscribe</h3>
+        <p class="subscribe-text">Sign up for our newsletter</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your email..." class="subscribe-input">
+          <button type="submit" class="subscribe-btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">Copyright © 2025 All rights reserved | This template is made with by Colorlib</p>
+    </div>
+  </div>
+</footer>
+  <!-- Script for Mobile Menu -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu-overlay');
+    const closeMenu = document.querySelector('.mobile-menu-close');
+    const body = document.body;
+    const hamburgerIcon = document.querySelector('.menu-toggle .fa-bars');
+
+    // Open menu
+    menuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      mobileMenu.classList.add('active');
+      body.classList.add('mobile-menu-active');
+      
+      // Animate hamburger to close
+      hamburgerIcon.style.opacity = '0';
+      hamburgerIcon.style.transform = 'translateY(-50%) rotate(90deg)';
+      
+      // Show close icon with animation
+      setTimeout(() => {
+        const closeLines = document.querySelectorAll('.close-line');
+        closeLines.forEach(line => {
+          line.style.opacity = '1';
+          line.style.transform = line.classList.contains('close-line-1') 
+            ? 'translateY(-50%) rotate(45deg)' 
+            : 'translateY(-50%) rotate(-45deg)';
+        });
+      }, 100);
+    });
+
+    // Close menu
+    function closeMobileMenu() {
+      // Animate close to hamburger
+      const closeLines = document.querySelectorAll('.close-line');
+      closeLines.forEach(line => {
+        line.style.opacity = '0';
+        line.style.transform = 'translateY(-50%) rotate(0deg)';
+      });
+      
+      setTimeout(() => {
+        mobileMenu.classList.remove('active');
+        body.classList.remove('mobile-menu-active');
+        hamburgerIcon.style.opacity = '1';
+        hamburgerIcon.style.transform = 'translateY(-50%) rotate(0deg)';
+      }, 300);
+    }
+
+    closeMenu.addEventListener('click', closeMobileMenu);
+
+    // Close menu when clicking on a button
+    const menuButtons = document.querySelectorAll('.mobile-menu-btn');
+    menuButtons.forEach(button => {
+      button.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close menu when clicking outside
+    mobileMenu.addEventListener('click', function(e) {
+      if (e.target === mobileMenu) {
+        closeMobileMenu();
+      }
+    });
+
+    // Gallery Lightbox Functionality
+const galleryItems = document.querySelectorAll('.gallery-item');
+const lightboxModal = document.querySelector('.lightbox-modal');
+const lightboxImage = document.getElementById('lightbox-image');
+const closeLightbox = document.querySelector('.close-lightbox');
+const prevBtn = document.querySelector('.lightbox-prev');
+const nextBtn = document.querySelector('.lightbox-next');
+
+let currentImageIndex = 0;
+const images = Array.from(galleryItems).map(item => 
+  item.style.backgroundImage.replace('url("', '').replace('")', '')
+);
+
+// Open lightbox
+galleryItems.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    currentImageIndex = index;
+    lightboxImage.src = images[currentImageIndex];
+    lightboxModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Close lightbox
+closeLightbox.addEventListener('click', () => {
+  lightboxModal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
+// Navigate images
+prevBtn.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+  lightboxImage.src = images[currentImageIndex];
+});
+
+nextBtn.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  lightboxImage.src = images[currentImageIndex];
+});
+
+// Close when clicking outside image
+lightboxModal.addEventListener('click', (e) => {
+  if (e.target === lightboxModal) {
+    lightboxModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (lightboxModal.style.display === 'block') {
+    if (e.key === 'Escape') {
+      lightboxModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    } else if (e.key === 'ArrowLeft') {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      lightboxImage.src = images[currentImageIndex];
+    } else if (e.key === 'ArrowRight') {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      lightboxImage.src = images[currentImageIndex];
+    }
+  }
+});
+  </script>
+
+</body>
+</html>

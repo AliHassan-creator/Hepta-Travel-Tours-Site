@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hepta - About US</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styling.css" />
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Custom style to reduce hero section height by ~10% */
+    .hero-section {
+      height: 90vh; /* Reduced from 100vh */
+    }
+    
+    /* Active menu button style */
+    .mobile-menu-btn.active {
+      color: #7ccfc8 !important;
+      font-weight: 600;
+    }
+
+    /* Force white backgrounds for all sections */
+    .hotel-gallery-section,
+    .recent-blog-section {
+      background-color: #fff !important;
+    }
+    
+    /* Remove all background effects */
+    .hotel-gallery-section::before,
+    .recent-blog-section::before,
+    .recent-blog-section::after {
+      display: none !important;
+    }
+    
+    /* Ensure text remains readable */
+    .recent-blog-title,
+    .recent-blog-desc {
+      color: #000 !important;
+    }
+    
+    /* Maintain card styling */
+    .blog-post {
+      background: #fff !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1) !important;
+    }
+    
+    /* Keep slider shadow */
+    .hotel-gallery-section .tour-slider-container {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+    }
+
+    .team-member-link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;               /* Base color black */
+    outline: none;              /* Remove outline (green box on click) */
+  }
+
+  .team-member-link:focus {
+    outline: none;              /* Just to ensure keyboard focus doesn't show */
+  }
+
+  .team-member-name {
+    margin: 0;
+    transition: color 0.2s;
+    color: black;               /* Explicitly force black */
+    font-weight: 600;
+  }
+
+  .team-member-link:hover .team-member-name,
+  .team-member-name:hover {
+    color: #7ccfc8;             /* Hover color */
+  }
+
+  .team-member-image-container a {
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+
+  .team-member-image-container a:hover {
+    transform: scale(1.05);
+  }
+</style>
+  
+</head>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+  <div class="mobile-menu-container">
+    <div class="mobile-menu-close">
+      <div class="close-icon-wrapper">
+        <span class="close-line close-line-1"></span>
+        <span class="close-line close-line-2"></span>
+      </div>
+    </div>
+    <div class="mobile-menu-content">
+      <button class="mobile-menu-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='hotel.html'">Hotels</button>
+      <button class="mobile-menu-btn active" onclick="window.location.href='aboutUs.html'">About Us</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='gallery.html'">Gallery</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='news.html'">News</button>
+      <button class="mobile-menu-btn" onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+  </div>
+</div>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="site-logo">Hepta</a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section hero-overlay">
+    <div class="container">
+      <div class="hero-content">
+        <h1>About Us</h1>
+        <p>A free template made by taking reference from <span class="highlight">Colorlib</span>. Download and share!</p>
+      </div>
+    </div>
+
+  </section>
+
+<!-- Welcome Travel & Tours Section -->
+<section class="family-room-section">
+  <div class="container">
+    <div class="family-room-content">
+      <div class="family-room-image">
+        <!-- Replace with your actual image path -->
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Family Room">
+      </div>
+      <div class="family-room-text">
+        <h2>Welcome Travel & Tours</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <a href="#" class="family-room-learn-more">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hotel Gallery -->
+<section class="tour-management hotel-gallery-section">
+  <div class="tour-text-container">
+    <h2 class="tour-title">Hotel Gallery</h2>
+    <p class="tour-subtitle">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,<br>
+      there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the<br>
+      Semantics, a large language ocean.
+    </p>
+  </div>
+
+  <div class="tour-slider-wrapper">
+    <button class="tour-btn prev">&#10094;</button>
+
+    <div class="tour-slider-container">
+      <div class="tour-slider">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" class="tour-slide active">
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80" class="tour-slide">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80" class="tour-slide">
+      </div>
+    </div>
+
+    <button class="tour-btn next">&#10095;</button>
+  </div>
+
+  <div class="tour-dots">
+    <span class="tour-dot active"></span>
+    <span class="tour-dot"></span>
+    <span class="tour-dot"></span>
+  </div>
+</section>
+
+<!-- Team Section -->
+<a id="top"></a>
+
+<section class="team-section">
+  <div class="container">
+    <div class="team-container">
+      <h2 class="team-title">Team</h2>
+      <p class="team-description">
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,  
+        there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the  
+        Semantics, a large language ocean.
+      </p>
+      
+      <div class="team-members">
+        <div class="team-member">
+          <div class="team-member-image-container">
+            <a href="#top" class="team-member-link" aria-label="Vince Richardson" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280&q=80" 
+                   alt="Vince Richardson" class="team-member-image">
+            </a>
+          </div>
+          <div class="team-member-info">
+            <a href="#top" class="team-member-link name-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+              <h3 class="team-member-name">Vince Richardson</h3>
+            </a>
+            <div class="team-member-position">CEO</div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="team-member-image-container">
+            <a href="#top" class="team-member-link" aria-label="Jean Love" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280&q=80" 
+                   alt="Jean Love" class="team-member-image">
+            </a>
+          </div>
+          <div class="team-member-info">
+            <a href="#top" class="team-member-link name-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+              <h3 class="team-member-name">Jean Love</h3>
+            </a>
+            <div class="team-member-position">CTO</div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="team-member-image-container">
+            <a href="#top" class="team-member-link" aria-label="Jeff Stark" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280&q=80" 
+                   alt="Jeff Stark" class="team-member-image">
+            </a>
+          </div>
+          <div class="team-member-info">
+            <a href="#top" class="team-member-link name-link" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">
+              <h3 class="team-member-name">Jeff Stark</h3>
+            </a>
+            <div class="team-member-position">Marketing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Quick Link</h3>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Rooms</a></li>
+        </ul>
+      </div>
+      
+      <!-- Support -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Our Location</a></li>
+          <li><a href="#">The Hosts</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Restaurant</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Contact Info</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="contact-label">Address:</span>
+            <span class="contact-value">98 West 21th Street, Suite 721<br>New York NY 10016</span>
+          </li>
+          <li>
+            <span class="contact-label">Phone:</span>
+            <span class="contact-value">(+1) 435 3533</span>
+          </li>
+          <li>
+            <span class="contact-label">Email:</span>
+            <span class="contact-value">info@yourdomain.com</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Subscribe -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Subscribe</h3>
+        <p class="subscribe-text">Sign up for our newsletter</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your email..." class="subscribe-input">
+          <button type="submit" class="subscribe-btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">Copyright © 2025 All rights reserved | This template is made with by Colorlib</p>
+    </div>
+  </div>
+</footer>
+  <!-- Script for Mobile Menu -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu-overlay');
+    const closeMenu = document.querySelector('.mobile-menu-close');
+    const body = document.body;
+    const hamburgerIcon = document.querySelector('.menu-toggle .fa-bars');
+
+    // Open menu
+    menuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      mobileMenu.classList.add('active');
+      body.classList.add('mobile-menu-active');
+      
+      // Animate hamburger to close
+      hamburgerIcon.style.opacity = '0';
+      hamburgerIcon.style.transform = 'translateY(-50%) rotate(90deg)';
+      
+      // Show close icon with animation
+      setTimeout(() => {
+        const closeLines = document.querySelectorAll('.close-line');
+        closeLines.forEach(line => {
+          line.style.opacity = '1';
+          line.style.transform = line.classList.contains('close-line-1') 
+            ? 'translateY(-50%) rotate(45deg)' 
+            : 'translateY(-50%) rotate(-45deg)';
+        });
+      }, 100);
+    });
+
+    // Close menu
+    function closeMobileMenu() {
+      // Animate close to hamburger
+      const closeLines = document.querySelectorAll('.close-line');
+      closeLines.forEach(line => {
+        line.style.opacity = '0';
+        line.style.transform = 'translateY(-50%) rotate(0deg)';
+      });
+      
+      setTimeout(() => {
+        mobileMenu.classList.remove('active');
+        body.classList.remove('mobile-menu-active');
+        hamburgerIcon.style.opacity = '1';
+        hamburgerIcon.style.transform = 'translateY(-50%) rotate(0deg)';
+      }, 300);
+    }
+
+    closeMenu.addEventListener('click', closeMobileMenu);
+
+    // Close menu when clicking on a button
+    const menuButtons = document.querySelectorAll('.mobile-menu-btn');
+    menuButtons.forEach(button => {
+      button.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close menu when clicking outside
+    mobileMenu.addEventListener('click', function(e) {
+      if (e.target === mobileMenu) {
+        closeMobileMenu();
+      }
+    });
+
+    const tourSlides = document.querySelectorAll('.tour-slide');
+  const tourDots = document.querySelectorAll('.tour-dot');
+  const prevBtn = document.querySelector('.tour-btn.prev');
+  const nextBtn = document.querySelector('.tour-btn.next');
+  let current = 0;
+
+  function showSlide(idx) {
+    tourSlides.forEach((slide,i) => slide.classList.toggle('active', i === idx));
+    tourDots.forEach((dot,i) => dot.classList.toggle('active', i === idx));
+  }
+
+  prevBtn.addEventListener('click', () => {
+    current = (current - 1 + tourSlides.length) % tourSlides.length;
+    showSlide(current);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    current = (current + 1) % tourSlides.length;
+    showSlide(current);
+  });
+
+  tourDots.forEach((dot,i) =>
+    dot.addEventListener('click', () => {
+      current = i;
+      showSlide(i);
+    })
+  );
+
+  // initialize
+  showSlide(current);
+  </script>
+
+</body>
+</html>
